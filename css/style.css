@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+	--main: #e34d6b;
+	--dark: #141826;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6em;
+	background-color: var(--dark);
+	color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.3em;
+}
+
+/* ---------------- */
+/* -----HEADER----- */
+/* ---------------- */
+
+header {
+	background-color: var(--main);
+	padding: 1.5em;
+	text-align: center;
+}
+
+header > h1 {
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------- */
+/* -----SCOREBOARD----- */
+/* -------------------- */
+
+.scoreboard {
+	position: relative;
+	border: 4px solid whitesmoke;
+	width: 20%;
+	margin: 0.75em auto;
+	padding: 0.75em .5em;
+	font-size: 3rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.badge {
+	background-color: var(--main);
+	border-radius: 5px;
+	font-size: 1.25rem;
+	padding: 0.5em;
+}
+
+#user-board {
+	position: absolute;
+	top: 25px;
+	left: -20px;
+}
+
+#computer-board {
+	position: absolute;
+	top: 25px;
+	right: -20px;
+}
+
+/* ---------------- */
+/* -----RESULT----- */
+/* ---------------- */
+
+.result {
+	margin-top: 1em;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+/* ----------------- */
+/* -----CHOICES----- */
+/* ----------------- */
+
+.choices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5em;
+}
+
+.choice {
+	border: 4px solid whitesmoke;
+	padding: 2.5em;
+	border-radius: 50%;
+	margin: 0 1em;
+	transition: all 0.4s ease;
+}
+
+.choice:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.choice:active {
+	transform: scale(0.9);
+}
+
+/* --------------- */
+/* -----RESET----- */
+/* --------------- */
+
+.reset {
+	margin-top: 4.5em;
+	text-align: center;
+}
+
+.reset > i {
+	transition: all 0.4s ease;
+}
+
+.reset > i:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.reset > i:active {
+	transform: scale(0.9);
+}
+
+/* ------------ */
+/* -----JS----- */
+/* ------------ */
+
+.green-glow,
+.green-glow:hover {
+	opacity: 1;
+	border: 4px solid rgb(0, 255, 0);
+	box-shadow: 0 0 10px rgb(0, 255, 39);
+	color: rgb(0, 255, 0);
+}
+
+.red-glow,
+.red-glow:hover {
+	opacity: 1;
+	border: 4px solid rgb(255, 0, 0);
+	box-shadow: 0 0 10px rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
+}
+
+.gray-glow,
+.gray-glow:hover {
+	opacity: 1;
+	border: 4px solid rgb(80, 80, 80);
+	box-shadow: 0 0 10px rgb(80, 80, 80);
+	color: rgb(80, 80, 80);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+
+    <div class="scoreboard">
+        <p id="user-board" class="badge"><i class="fa fa-user"></i></p>
+        <p id="computer-board" class="badge"><i class="fa fa-desktop"></i></p>
+        <span class="user-score">0</span>:<span class="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Let the game begin!</p>
+    </div>
+
+    <div class="choices">
+        <div id="r" class="choice">
+            <i class="fa fa-hand-rock fa-4x"></i>
+        </div>
+        <div id="p" class="choice">
+            <i class="fa fa-hand-paper fa-4x"></i>
+        </div>
+        <div id="s" class="choice">
+            <i class="fa fa-hand-scissors fa-4x"></i>
+        </div>
+    </div>
+
+    <div class="reset">
+        <i class="fa fa-retweet fa-2x reset-button"></i>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        // Scroll reveal
+
+        window.sr = ScrollReveal();
+
+        sr.reveal('.scoreboard', {
+            duration: 750,
+            origin: 'bottom',
+            distance: '25px'
+        });
+
+        sr.reveal('.result', {
+            delay: 250,
+            duration: 750,
+            origin: 'bottom',
+            distance: '25px'
+        });
+
+        sr.reveal('.choices', {
+            delay: 500,
+            duration: 750,
+            origin: 'bottom',
+            distance: '25px'
+        });
+
+        sr.reveal('.reset', {
+            delay: 750,
+            duration: 750,
+            origin: 'bottom',
+            distance: '25px'
+        });
+
+        sr.reveal('header > h1', {
+            delay: 1000,
+            duration: 750,
+            origin: 'top',
+            distance: '25px'
+        });
+    </script>
+</body>
+
+</html>
